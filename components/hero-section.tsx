@@ -35,10 +35,10 @@ function CountUp({ value, suffix = "" }: { value: number; suffix?: string }) {
 }
 
 // Define the props for reusability
-interface StatProps {
+interface SocialProofProps {
+  avatars: string[];
   value: string;
   label: string;
-  icon: React.ReactNode;
 }
 
 interface ActionProps {
@@ -54,7 +54,7 @@ interface HeroSectionProps {
   title: React.ReactNode;
   subtitle: string;
   actions: ActionProps[];
-  stats: StatProps[];
+  socialProof: SocialProofProps;
   images: string[];
   className?: string;
 }
@@ -104,7 +104,7 @@ const floatingVariants = {
   },
 };
 
-const HeroSection = ({ title, subtitle, actions, stats, images, className }: HeroSectionProps) => {
+const HeroSection = ({ title, subtitle, actions, socialProof, images, className }: HeroSectionProps) => {
   return (
     <section className={cn('w-full min-h-screen overflow-hidden bg-background flex items-center', className)}>
       <div className="mx-auto w-full max-w-7xl px-4 lg:px-8 grid grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-8 py-12 sm:py-0">
@@ -116,21 +116,21 @@ const HeroSection = ({ title, subtitle, actions, stats, images, className }: Her
           animate="visible"
         >
           <motion.h1
-            className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl lg:text-6xl"
+            className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl md:text-5xl lg:text-6xl"
             variants={itemVariants}
           >
             {title}
           </motion.h1>
-          <motion.p className="mt-6 max-w-md text-lg text-muted-foreground" variants={itemVariants}>
+          <motion.p className="mt-4 sm:mt-6 max-w-md text-base sm:text-lg text-muted-foreground" variants={itemVariants}>
             {subtitle}
           </motion.p>
-          <motion.div className="mt-8 flex flex-wrap justify-center gap-4 lg:justify-start" variants={itemVariants}>
+          <motion.div className="mt-6 sm:mt-8 flex flex-col sm:flex-row w-full sm:w-auto gap-3 sm:gap-4 lg:justify-start" variants={itemVariants}>
             {actions.map((action, index) => (
               <Button 
                 key={index} 
                 variant={action.variant} 
                 size="lg" 
-                className={action.className}
+                className={cn("w-full sm:w-auto", action.className)}
                 asChild
               >
                 <a href={action.href} target={action.target} rel={action.rel}>
@@ -139,29 +139,39 @@ const HeroSection = ({ title, subtitle, actions, stats, images, className }: Her
               </Button>
             ))}
           </motion.div>
-          <motion.div className="mt-12 flex flex-wrap justify-center gap-8 lg:justify-start" variants={itemVariants}>
-            {stats.map((stat, index) => {
-              // Parse numeric value for count animation
-              const numericMatch = stat.value.match(/^([\d.]+)(.*)$/);
-              const numericValue = numericMatch ? parseFloat(numericMatch[1]) : null;
-              const suffix = numericMatch ? numericMatch[2] : stat.value;
-              
-              return (
-                <div key={index} className="flex items-center gap-3">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-muted">{stat.icon}</div>
-                  <div>
-                    <p className="text-xl font-bold text-foreground">
-                      {numericValue !== null ? (
-                        <CountUp value={numericValue} suffix={suffix} />
-                      ) : (
-                        stat.value
-                      )}
-                    </p>
-                    <p className="text-sm text-muted-foreground">{stat.label}</p>
-                  </div>
+          <motion.div className="mt-8 sm:mt-12 flex items-center justify-center gap-4 lg:justify-start" variants={itemVariants}>
+            {/* Avatar Stack */}
+            <div className="flex -space-x-3">
+              {socialProof.avatars.map((avatar, index) => (
+                <div
+                  key={index}
+                  className="relative h-10 w-10 overflow-hidden rounded-full ring-2 ring-white dark:ring-slate-900"
+                  style={{ zIndex: socialProof.avatars.length - index }}
+                >
+                  <img
+                    src={avatar}
+                    alt={`User ${index + 1}`}
+                    className="h-full w-full object-cover"
+                  />
                 </div>
-              );
-            })}
+              ))}
+            </div>
+            {/* Stat Text */}
+            <div>
+              <p className="text-lg text-left font-bold text-foreground">
+                {(() => {
+                  const numericMatch = socialProof.value.match(/^([\d.]+)(.*)$/);
+                  const numericValue = numericMatch ? parseFloat(numericMatch[1]) : null;
+                  const suffix = numericMatch ? numericMatch[2] : socialProof.value;
+                  return numericValue !== null ? (
+                    <CountUp value={numericValue} suffix={suffix} />
+                  ) : (
+                    socialProof.value
+                  );
+                })()}
+              </p>
+              <p className="text-sm text-muted-foreground">{socialProof.label}</p>
+            </div>
           </motion.div>
         </motion.div>
 

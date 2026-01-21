@@ -10,7 +10,7 @@ import CoffinCard from "./components/CoffinCard";
 import { getHeroSlides, getHeroServices } from "./service/hero.service";
 import { getServices } from "./service/service.service";
 import { getCoffinProducts } from "./service/coffin.service";
-import { Users, Clock, Star } from "lucide-react";
+import AnimatedHeadline from "./components/AnimatedHeadline";
 
 export default async function Home() {
   // Fetch all data in parallel
@@ -27,43 +27,39 @@ export default async function Home() {
       <HeroSection
         title={
           <>
-            Eden Layanan Kedukaan,
+            <AnimatedHeadline text="Layanan Kedukaan" />
             <br />
-            Membantu dan Melayani
+            Kami menyediakan segala kebutuhan anda
           </>
         }
-        subtitle="Jasa pemakaman profesional yang siap membantu Anda dengan penuh dedikasi dan penghormatan di saat-saat yang sulit."
+        subtitle="Layanan pemakaman 24/7 yang profesional dan terpercaya. Dari pengurusan dokumen hingga upacara, serahkan pada kami agar Anda bisa fokus berduka bersama keluarga."
         actions={[
           {
-            text: "Lihat Layanan",
+            text: "Jelajahi Layanan",
             href: "/layanan",
             variant: "default",
+            className: "bg-gradient-to-r from-blue-600 to-cyan-500 hover:from-blue-700 hover:to-cyan-600 shadow-lg shadow-blue-500/30 hover:shadow-blue-500/50 hover:scale-[1.02] transition-all duration-300",
           },
           {
-            text: "Hubungi Sekarang",
+            text: "💬 Konsultasi Gratis",
             href: "https://wa.me/6282211111415",
             variant: "outline",
             target: "_blank",
             rel: "noopener noreferrer",
+            className: "border-blue-500 text-blue-600 hover:bg-blue-50 hover:scale-[1.02] transition-all duration-300",
           },
         ]}
-        stats={[
-          {
-            value: "1000+",
-            label: "Keluarga Terbantu",
-            icon: <Users className="h-5 w-5 text-muted-foreground" />,
-          },
-          {
-            value: "24/7",
-            label: "Siap Melayani",
-            icon: <Clock className="h-5 w-5 text-muted-foreground" />,
-          },
-          {
-            value: "5.0",
-            label: "Rating Google",
-            icon: <Star className="h-5 w-5 text-muted-foreground" />,
-          },
-        ]}
+        socialProof={{
+          avatars: [
+            "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&h=100&fit=crop&crop=face",
+            "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face",
+            "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=face",
+            "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=100&h=100&fit=crop&crop=face",
+            "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=100&h=100&fit=crop&crop=face",
+          ],
+          value: "1000+",
+          label: "keluarga terbantu",
+        }}
         images={[
           "https://images.unsplash.com/photo-1494972308805-463bc619d34e?q=80&w=2071&auto=format&fit=crop",
           "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?q=80&w=2069&auto=format&fit=crop",
