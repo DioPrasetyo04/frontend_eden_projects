@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/header-3";
+import { Footer7 } from "@/components/footer-7";
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -35,6 +36,7 @@ export default function RootLayout({
       <body className={`min-h-screen overflow-x-hidden`}>
         <Header />
         {children}
+        <Footer7 />
       </body>
     </html>
   );
