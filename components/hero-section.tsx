@@ -107,7 +107,7 @@ const floatingVariants = {
 const HeroSection = ({ title, subtitle, actions, stats, images, className }: HeroSectionProps) => {
   return (
     <section className={cn('w-full min-h-screen overflow-hidden bg-background flex items-center', className)}>
-      <div className="container mx-auto px-4 sm:px-6 lg:px-12 grid grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-8 py-12 sm:py-0">
+      <div className="mx-auto w-full max-w-7xl px-4 lg:px-8 grid grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-8 py-12 sm:py-0">
         {/* Left Column: Text Content */}
         <motion.div
           className="flex flex-col items-center text-center lg:items-start lg:text-left"
