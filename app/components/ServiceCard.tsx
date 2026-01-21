@@ -3,13 +3,44 @@
 import { ServiceItem } from "@/app/types/service";
 import Link from "next/link";
 import { HiArrowRight } from "react-icons/hi";
+import {
+  PiAmbulanceFill,
+  PiUserGearFill,
+  PiSyringeFill,
+  PiHouseLineFill,
+  PiFlowerLotusFill,
+  PiCameraFill,
+  PiMotorcycleFill,
+  PiCrossFill,
+  PiFireFill,
+  PiAirplaneTiltFill,
+  PiClipboardTextFill,
+} from "react-icons/pi";
+import { GiCoffin } from "react-icons/gi";
+
+// Map string names to icon components
+const iconMap: Record<string, React.ElementType> = {
+  PiAmbulanceFill,
+  PiUserGearFill,
+  PiSyringeFill,
+  PiHouseLineFill,
+  PiFlowerLotusFill,
+  PiCameraFill,
+  PiMotorcycleFill,
+  PiCrossFill,
+  PiFireFill,
+  PiAirplaneTiltFill,
+  PiClipboardTextFill,
+  GiCoffin,
+};
 
 interface ServiceCardProps {
   service: ServiceItem;
 }
 
 const ServiceCard = ({ service }: ServiceCardProps) => {
-  const Icon = service.icon;
+  // Safe access to icon based on string key
+  const Icon = iconMap[service.icon] || PiAmbulanceFill; // Default fallback
 
   return (
     <Link href={service.href} className="block h-full">
@@ -31,10 +62,10 @@ const ServiceCard = ({ service }: ServiceCardProps) => {
 
         {/* Footer / Action */}
         <div className="relative z-10 w-full mt-6 pt-4 border-t border-slate-100 group-hover:border-blue-100 transition-colors duration-300">
-            <div className="flex items-center justify-center gap-2 text-sm font-semibold text-slate-500 group-hover:text-blue-600 transition-all duration-300">
-                <span>Lihat Detail</span>
-                <HiArrowRight className="transform group-hover:translate-x-1 transition-transform duration-300" />
-            </div>
+          <div className="flex items-center justify-center gap-2 text-sm font-semibold text-slate-500 group-hover:text-blue-600 transition-all duration-300">
+            <span>Lihat Detail</span>
+            <HiArrowRight className="transform group-hover:translate-x-1 transition-transform duration-300" />
+          </div>
         </div>
       </div>
     </Link>

@@ -5,10 +5,11 @@ export type CardColor = "blue" | "purple" | "emerald" | "indigo";
 export type CardPelayananProps = {
   title: string;
   description: string;
-  svg: React.ReactNode;
+  iconPath: string; // Changed from svg: React.ReactNode
   color?: CardColor;
   delay?: number;
 };
+
 
 const colorStyles = {
   blue: {
@@ -45,20 +46,24 @@ const colorStyles = {
   },
 };
 
+
 const CardPelayanan = ({ 
   title, 
   description, 
-  svg, 
+  iconPath, // Changed from svg to iconPath
   color = "blue",
   delay = 3 
-}: CardPelayananProps) => {
+}: CardPelayananProps & { iconPath?: string }) => { // Extended props temporarily or update type definition
   const styles = colorStyles[color];
 
   return (
     <div className={`animate-in-right delay-${delay}`}>
       <div className={`group bg-gradient-to-br ${styles.bg} backdrop-blur-xl rounded-2xl p-6 border ${styles.border} ${styles.hoverBg} transition-all duration-500 hover:shadow-2xl ${styles.shadow} cursor-pointer h-full`}>
         <div className={`w-14 h-14 ${styles.iconBg} rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg ${styles.iconShadow}`}>
-          {svg}
+           {/* Render SVG using path */}
+           <svg className="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 24 24">
+              <path d={iconPath} />
+           </svg>
         </div>
         <h3 className="text-white font-bold mb-2 text-base">{title}</h3>
         <p className="text-slate-300/80 text-sm leading-relaxed">

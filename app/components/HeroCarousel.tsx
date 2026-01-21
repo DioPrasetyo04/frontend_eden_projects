@@ -23,7 +23,7 @@ export default function HeroCarousel({
   const active = slides[idx];
 
   return (
-    <div className={`relative w-full h-[680px] lg:h-[580px] overflow-hidden ${className}`}>
+    <div className={`relative w-full h-[680px] lg:h-[680px] overflow-hidden ${className}`}>
       {/* Background Image */}
       <Image
         src={active.image}
