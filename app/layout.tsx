@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { Header } from "@/components/header-3";
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -23,7 +24,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="id">
       <link
         rel="icon"
         href="/images/logos/logo-pemakaman.jpg"
@@ -31,7 +32,10 @@ export default function RootLayout({
       />
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com"></link>
-      <body className={`min-h-screen overflow-x-hidden`}>{children}</body>
+      <body className={`min-h-screen overflow-x-hidden`}>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
