@@ -26,7 +26,9 @@ import {
 	FileText,
 	MapPin,
 	Clock,
+  ChevronDown,
 } from 'lucide-react';
+import { AnimatePresence, motion } from 'framer-motion';
 
 type LinkItem = {
 	title: string;
@@ -86,7 +88,7 @@ export function Header() {
 									<div className="p-2">
 										<p className="text-muted-foreground text-sm">
 											Butuh bantuan?{' '}
-											<a href="https://wa.me/6282211111415" target="_blank" rel="noopener noreferrer" className="text-foreground font-medium hover:underline">
+										<a href="https://wa.me/6282211111415" target="_blank" rel="noopener noreferrer" className="text-foreground font-medium hover:underline">
 												Hubungi kami sekarang
 											</a>
 										</p>
@@ -150,29 +152,33 @@ export function Header() {
 					<MenuToggleIcon open={open} className="size-5" duration={300} />
 				</Button>
 			</nav>
-			<MobileMenu open={open} className="flex flex-col justify-between gap-2 overflow-y-auto">
-				<NavigationMenu className="max-w-full">
-					<div className="flex w-full flex-col gap-y-2">
-						<a href="/" className="hover:bg-accent rounded-md p-2 font-medium">
+			<MobileMenu open={open} className="flex flex-col gap-6 pt-6 overflow-y-auto">
+				<div className="flex w-full flex-col">
+						<a href="/" className="hover:bg-accent rounded-md p-3 font-medium text-base border-b border-border">
 							Beranda
 						</a>
-						<span className="text-sm text-muted-foreground font-medium">Layanan</span>
-						{layananLinks.map((link) => (
-							<ListItem key={link.title} {...link} />
-						))}
-						<a href="#jasa-layanan-peti" className="hover:bg-accent rounded-md p-2 font-medium">
+            
+            <MobileDropdown title="Layanan">
+              {layananLinks.map((link) => (
+                <MobileListItem key={link.title} {...link} />
+              ))}
+            </MobileDropdown>
+
+						<a href="#jasa-layanan-peti" className="hover:bg-accent rounded-md p-3 font-medium text-base border-b border-border">
 							Produk
 						</a>
-						<span className="text-sm text-muted-foreground font-medium">Tentang Kami</span>
-						{tentangLinks.map((link) => (
-							<ListItem key={link.title} {...link} />
-						))}
-						<a href="#faq" className="hover:bg-accent rounded-md p-2 font-medium">
+            
+            <MobileDropdown title="Tentang Kami">
+              {tentangLinks.map((link) => (
+                <MobileListItem key={link.title} {...link} />
+              ))}
+            </MobileDropdown>
+
+						<a href="#faq" className="hover:bg-accent rounded-md p-3 font-medium text-base border-b border-border">
 							FAQ
 						</a>
-					</div>
-				</NavigationMenu>
-				<div className="flex flex-col gap-2">
+				</div>
+				<div className="flex flex-col gap-2 mt-4">
 					<Button variant="outline" className="w-full bg-transparent" asChild>
 						<a href="tel:+6282211111415" className="flex items-center justify-center gap-2">
 							<Phone className="h-4 w-4" />
@@ -222,6 +228,41 @@ function MobileMenu({ open, children, className, ...props }: MobileMenuProps) {
 	);
 }
 
+function MobileDropdown({ title, children }: { title: string; children: React.ReactNode }) {
+  const [isOpen, setIsOpen] = React.useState(false);
+
+  return (
+    <div className="flex flex-col">
+      <button
+        onClick={() => setIsOpen(!isOpen)}
+        className="flex items-center justify-between rounded-md p-3 font-medium hover:bg-accent w-full text-left text-base border-b border-border"
+      >
+        <span>{title}</span>
+        <ChevronDown
+          className={cn("h-4 w-4 transition-transform duration-200", {
+            "rotate-180": isOpen,
+          })}
+        />
+      </button>
+      <AnimatePresence initial={false}>
+        {isOpen && (
+          <motion.div
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: "auto", opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.2 }}
+            className="overflow-hidden"
+          >
+            <div className="pl-4 border-l ml-2 space-y-1 my-1">
+              {children}
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
+  );
+}
+
 function ListItem({
 	title,
 	description,
@@ -238,10 +279,31 @@ function ListItem({
 				</div>
 				<div className="flex flex-col items-start justify-center">
 					<span className="font-medium">{title}</span>
-					<span className="text-muted-foreground text-xs">{description}</span>
+					<span className="text-muted-foreground text-xs line-clamp-1">{description}</span>
 				</div>
 			</a>
 		</NavigationMenuLink>
+	);
+}
+
+function MobileListItem({
+	title,
+	description,
+	icon: Icon,
+	className,
+	href,
+	...props
+}: React.ComponentProps<'a'> & LinkItem) {
+	return (
+			<a href={href} className={cn('w-full flex flex-row gap-x-2 text-foreground hover:bg-accent hover:text-accent-foreground rounded-sm p-2', className)} {...props}>
+				<div className="bg-background/40 flex aspect-square size-12 items-center justify-center rounded-md border shadow-sm">
+					<Icon className="text-foreground size-5" />
+				</div>
+				<div className="flex flex-col items-start justify-center">
+					<span className="font-medium">{title}</span>
+					<span className="text-muted-foreground text-xs line-clamp-1">{description}</span>
+				</div>
+			</a>
 	);
 }
 
