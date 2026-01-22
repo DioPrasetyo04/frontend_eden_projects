@@ -1,295 +1,295 @@
 {
-    "layanankedukaan": [
+  "layanankedukaan": [
+    {
+      "id": 1,
+      "name": "Mobil Jenazah",
+      "slug": "layanan-kedukaan-mobil-jenazah",
+      "images": "/images/layanankedukaan/ambulans.jpg",
+      "benefits": [
         {
-            "id": 1,
-            "name": "Mobil Jenazah",
-            "slug": "layanan-kedukaan-mobil-jenazah",
-            "images": "/images/layanankedukaan/ambulans.jpg",
-            "benefits": [
-                {
-                    "id": 1,
-                    "description": "Mobil khusus untuk transportasi jenazah"
-                },
-                {
-                    "id": 2,
-                    "description": "Dukungan 24/7"
-                },
-                {
-                    "id": 3,
-                    "description": "Transportasi cepat & aman"
-                },
-                {
-                    "id": 4,
-                    "description": "Harga ekonomis & terjangkau"
-                }
-            ]
+          "id": 1,
+          "description": "Mobil khusus untuk transportasi jenazah"
         },
         {
-            "id": 2,
-            "name": "Perapihan Jenazah",
-            "slug": "layanan-kedukaan-perapihan-jenazah",
-            "images": "/images/layanankedukaan/pengurusanjenazah.jpg",
-            "benefits": [
-                {
-                    "id": 1,
-                    "description": "Perapihan jenazah profesional"
-                },
-                {
-                    "id": 2,
-                    "description": "Dukungan 24/7"
-                },
-                {
-                    "id": 3,
-                    "description": "Transportasi cepat & aman"
-                },
-                {
-                    "id": 4,
-                    "description": "Harga ekonomis & terjangkau"
-                }
-            ]
+          "id": 2,
+          "description": "Dukungan 24/7"
         },
         {
-            "id": 3,
-            "name": "Formalin Jenazah",
-            "slug": "layanan-kedukaan-formalin-jenazah",
-            "images": "/images/layanankedukaan/formalinjenazah.jpg",
-            "benefits": [
-                {
-                    "id": 1,
-                    "description": "Formalin jenazah profesional"
-                },
-                {
-                    "id": 2,
-                    "description": "Dukungan 24/7"
-                },
-                {
-                    "id": 3,
-                    "description": "Transportasi cepat & aman"
-                },
-                {
-                    "id": 4,
-                    "description": "Harga ekonomis & terjangkau"
-                }
-            ]
+          "id": 3,
+          "description": "Transportasi cepat & aman"
         },
         {
-            "id": 4,
-            "name": "Ruang Duka",
-            "slug": "layanan-kedukaan-ruang-duka",
-            "images": "/images/layanankedukaan/rumahduka.jpeg",
-            "benefits": [
-                {
-                    "id": 1,
-                    "description": "Ruang duka profesional"
-                },
-                {
-                    "id": 2,
-                    "description": "Dukungan 24/7"
-                },
-                {
-                    "id": 3,
-                    "description": "Transportasi cepat & aman"
-                },
-                {
-                    "id": 4,
-                    "description": "Harga ekonomis & terjangkau"
-                }
-            ]
-        },
-        {
-            "id": 5,
-            "name": "Peti Jenazah",
-            "slug": "layanan-kedukaan-peti-jenazah",
-            "images": "/images/layanankedukaan/petijenazah.jpeg",
-            "benefits": [
-                {
-                    "id": 1,
-                    "description": "Peti jenazah profesional"
-                },
-                {
-                    "id": 2,
-                    "description": "Dukungan 24/7"
-                },
-                {
-                    "id": 3,
-                    "description": "Transportasi cepat & aman"
-                },
-                {
-                    "id": 4,
-                    "description": "Harga ekonomis & terjangkau"
-                }
-            ]
-        },
-        {
-            "id": 6,
-            "name": "Rangkaian Bunga",
-            "slug": "layanan-kedukaan-rangkaian-bunga",
-            "images": "/images/layanankedukaan/rangkaianbunga.jpg",
-            "benefits": [
-                {
-                    "id": 1,
-                    "description": "Rangkaian bunga profesional"
-                },
-                {
-                    "id": 2,
-                    "description": "Dukungan 24/7"
-                },
-                {
-                    "id": 3,
-                    "description": "Transportasi cepat & aman"
-                },
-                {
-                    "id": 4,
-                    "description": "Harga ekonomis & terjangkau"
-                }
-            ]
-        },
-        {
-            "id": 7,
-            "name": "Foto & Video",
-            "slug": "layanan-kedukaan-foto-video",
-            "images": "/images/layanankedukaan/fotokedukaan.png",
-            "benefits": [
-                {
-                    "id": 1,
-                    "description": "Foto & video profesional"
-                },
-                {
-                    "id": 2,
-                    "description": "Dukungan 24/7"
-                },
-                {
-                    "id": 3,
-                    "description": "Transportasi cepat & aman"
-                },
-                {
-                    "id": 4,
-                    "description": "Harga ekonomis & terjangkau"
-                }
-            ]
-        },
-        {
-            "id": 8,
-            "name": "Voorijder / Patwal",
-            "slug": "layanan-kedukaan-voorijder-patwal",
-            "images": "/images/layanankedukaan/fotopatwal.png",
-            "benefits": [
-                {
-                    "id": 1,
-                    "description": "Voorijder / patwal profesional"
-                },
-                {
-                    "id": 2,
-                    "description": "Dukungan 24/7"
-                },
-                {
-                    "id": 3,
-                    "description": "Transportasi cepat & aman"
-                },
-                {
-                    "id": 4,
-                    "description": "Harga ekonomis & terjangkau"
-                }
-            ]
-        },
-        {
-            "id": 9,
-            "name": "Tanah Makam",
-            "slug": "layanan-kedukaan-tanah-makam",
-            "images": "/images/layanankedukaan/tanahmakam.jpg",
-            "benefits": [
-                {
-                    "id": 1,
-                    "description": "Tanah makam profesional"
-                },
-                {
-                    "id": 2,
-                    "description": "Dukungan 24/7"
-                },
-                {
-                    "id": 3,
-                    "description": "Transportasi cepat & aman"
-                },
-                {
-                    "id": 4,
-                    "description": "Harga ekonomis & terjangkau"
-                }
-            ]
-        },
-        {
-            "id": 10,
-            "name": "Kremasi",
-            "slug": "layanan-kedukaan-kremasi",
-            "images": "/images/layanankedukaan/kremasipemakaman.jpg",
-            "benefits": [
-                {
-                    "id": 1,
-                    "description": "Kremasi profesional"
-                },
-                {
-                    "id": 2,
-                    "description": "Dukungan 24/7"
-                },
-                {
-                    "id": 3,
-                    "description": "Transportasi cepat & aman"
-                },
-                {
-                    "id": 4,
-                    "description": "Harga ekonomis & terjangkau"
-                }
-            ]
-        },
-        {
-            "id": 11,
-            "name": "Cargo Jenazah",
-            "slug": "layanan-kedukaan-cargo-jenazah",
-            "images": "/images/layanankedukaan/cargojenazah.webp",
-            "benefits": [
-                {
-                    "id": 1,
-                    "description": "Cargo jenazah profesional"
-                },
-                {
-                    "id": 2,
-                    "description": "Dukungan 24/7"
-                },
-                {
-                    "id": 3,
-                    "description": "Transportasi cepat & aman"
-                },
-                {
-                    "id": 4,
-                    "description": "Harga ekonomis & terjangkau"
-                }
-            ]
-        },
-        {
-            "id": 12,
-            "name": "Konsultasi Kedukaan",
-            "slug": "layanan-kedukaan-konsultasi",
-            "images": "/images/layanankedukaan/konsultasikedukaan.webp",
-            "benefits": [
-                {
-                    "id": 1,
-                    "description": "Konsultasi kedukaan profesional"
-                },
-                {
-                    "id": 2,
-                    "description": "Dukungan 24/7"
-                },
-                {
-                    "id": 3,
-                    "description": "Transportasi cepat & aman"
-                },
-                {
-                    "id": 4,
-                    "description": "Harga ekonomis & terjangkau"
-                }
-            ]
+          "id": 4,
+          "description": "Harga ekonomis & terjangkau"
         }
-    ],
-      "heroSlides": [
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Perapihan Jenazah",
+      "slug": "layanan-kedukaan-perapihan-jenazah",
+      "images": "/images/layanankedukaan/pengurusanjenazah.jpg",
+      "benefits": [
+        {
+          "id": 1,
+          "description": "Perapihan jenazah profesional"
+        },
+        {
+          "id": 2,
+          "description": "Dukungan 24/7"
+        },
+        {
+          "id": 3,
+          "description": "Transportasi cepat & aman"
+        },
+        {
+          "id": 4,
+          "description": "Harga ekonomis & terjangkau"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Formalin Jenazah",
+      "slug": "layanan-kedukaan-formalin-jenazah",
+      "images": "/images/layanankedukaan/formalinjenazah.jpg",
+      "benefits": [
+        {
+          "id": 1,
+          "description": "Formalin jenazah profesional"
+        },
+        {
+          "id": 2,
+          "description": "Dukungan 24/7"
+        },
+        {
+          "id": 3,
+          "description": "Transportasi cepat & aman"
+        },
+        {
+          "id": 4,
+          "description": "Harga ekonomis & terjangkau"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Ruang Duka",
+      "slug": "layanan-kedukaan-ruang-duka",
+      "images": "/images/layanankedukaan/rumahduka.jpeg",
+      "benefits": [
+        {
+          "id": 1,
+          "description": "Ruang duka profesional"
+        },
+        {
+          "id": 2,
+          "description": "Dukungan 24/7"
+        },
+        {
+          "id": 3,
+          "description": "Transportasi cepat & aman"
+        },
+        {
+          "id": 4,
+          "description": "Harga ekonomis & terjangkau"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Peti Jenazah",
+      "slug": "layanan-kedukaan-peti-jenazah",
+      "images": "/images/layanankedukaan/petijenazah.jpeg",
+      "benefits": [
+        {
+          "id": 1,
+          "description": "Peti jenazah profesional"
+        },
+        {
+          "id": 2,
+          "description": "Dukungan 24/7"
+        },
+        {
+          "id": 3,
+          "description": "Transportasi cepat & aman"
+        },
+        {
+          "id": 4,
+          "description": "Harga ekonomis & terjangkau"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Rangkaian Bunga",
+      "slug": "layanan-kedukaan-rangkaian-bunga",
+      "images": "/images/layanankedukaan/rangkaianbunga.jpg",
+      "benefits": [
+        {
+          "id": 1,
+          "description": "Rangkaian bunga profesional"
+        },
+        {
+          "id": 2,
+          "description": "Dukungan 24/7"
+        },
+        {
+          "id": 3,
+          "description": "Transportasi cepat & aman"
+        },
+        {
+          "id": 4,
+          "description": "Harga ekonomis & terjangkau"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Foto & Video",
+      "slug": "layanan-kedukaan-foto-video",
+      "images": "/images/layanankedukaan/fotokedukaan.png",
+      "benefits": [
+        {
+          "id": 1,
+          "description": "Foto & video profesional"
+        },
+        {
+          "id": 2,
+          "description": "Dukungan 24/7"
+        },
+        {
+          "id": 3,
+          "description": "Transportasi cepat & aman"
+        },
+        {
+          "id": 4,
+          "description": "Harga ekonomis & terjangkau"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Voorijder / Patwal",
+      "slug": "layanan-kedukaan-voorijder-patwal",
+      "images": "/images/layanankedukaan/fotopatwal.png",
+      "benefits": [
+        {
+          "id": 1,
+          "description": "Voorijder / patwal profesional"
+        },
+        {
+          "id": 2,
+          "description": "Dukungan 24/7"
+        },
+        {
+          "id": 3,
+          "description": "Transportasi cepat & aman"
+        },
+        {
+          "id": 4,
+          "description": "Harga ekonomis & terjangkau"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Tanah Makam",
+      "slug": "layanan-kedukaan-tanah-makam",
+      "images": "/images/layanankedukaan/tanahmakam.jpg",
+      "benefits": [
+        {
+          "id": 1,
+          "description": "Tanah makam profesional"
+        },
+        {
+          "id": 2,
+          "description": "Dukungan 24/7"
+        },
+        {
+          "id": 3,
+          "description": "Transportasi cepat & aman"
+        },
+        {
+          "id": 4,
+          "description": "Harga ekonomis & terjangkau"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Kremasi",
+      "slug": "layanan-kedukaan-kremasi",
+      "images": "/images/layanankedukaan/kremasipemakaman.jpg",
+      "benefits": [
+        {
+          "id": 1,
+          "description": "Kremasi profesional"
+        },
+        {
+          "id": 2,
+          "description": "Dukungan 24/7"
+        },
+        {
+          "id": 3,
+          "description": "Transportasi cepat & aman"
+        },
+        {
+          "id": 4,
+          "description": "Harga ekonomis & terjangkau"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Cargo Jenazah",
+      "slug": "layanan-kedukaan-cargo-jenazah",
+      "images": "/images/layanankedukaan/cargojenazah.webp",
+      "benefits": [
+        {
+          "id": 1,
+          "description": "Cargo jenazah profesional"
+        },
+        {
+          "id": 2,
+          "description": "Dukungan 24/7"
+        },
+        {
+          "id": 3,
+          "description": "Transportasi cepat & aman"
+        },
+        {
+          "id": 4,
+          "description": "Harga ekonomis & terjangkau"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Konsultasi Kedukaan",
+      "slug": "layanan-kedukaan-konsultasi",
+      "images": "/images/layanankedukaan/konsultasikedukaan.webp",
+      "benefits": [
+        {
+          "id": 1,
+          "description": "Konsultasi kedukaan profesional"
+        },
+        {
+          "id": 2,
+          "description": "Dukungan 24/7"
+        },
+        {
+          "id": 3,
+          "description": "Transportasi cepat & aman"
+        },
+        {
+          "id": 4,
+          "description": "Harga ekonomis & terjangkau"
+        }
+      ]
+    }
+  ],
+  "heroSlides": [
     {
       "image": "/images/logos/logo-pemakaman.jpg",
       "subtitle": "Explore Innovation"
@@ -304,18 +304,78 @@
     }
   ],
   "services": [
-    { "id": "1", "title": "Mobil Jenazah", "icon": "PiAmbulanceFill", "href": "/layanan/mobil-jenazah" },
-    { "id": "2", "title": "Perapihan Jenazah", "icon": "PiUserGearFill", "href": "/layanan/perapihan-jenazah" },
-    { "id": "3", "title": "Formalin Jenazah", "icon": "PiSyringeFill", "href": "/layanan/formalin-jenazah" },
-    { "id": "4", "title": "Ruang Duka", "icon": "PiHouseLineFill", "href": "/layanan/ruang-duka" },
-    { "id": "5", "title": "Peti Jenazah", "icon": "GiCoffin", "href": "/layanan/peti-jenazah" },
-    { "id": "6", "title": "Rangkaian Bunga", "icon": "PiFlowerLotusFill", "href": "/layanan/rangkaian-bunga" },
-    { "id": "7", "title": "Foto & Video", "icon": "PiCameraFill", "href": "/layanan/foto-video" },
-    { "id": "8", "title": "Voorijder / Patwal", "icon": "PiMotorcycleFill", "href": "/layanan/voorijder" },
-    { "id": "9", "title": "Tanah Makam", "icon": "PiCrossFill", "href": "/layanan/tanah-makam" },
-    { "id": "10", "title": "Kremasi", "icon": "PiFireFill", "href": "/layanan/kremasi" },
-    { "id": "11", "title": "Cargo Jenazah", "icon": "PiAirplaneTiltFill", "href": "/layanan/cargo-jenazah" },
-    { "id": "12", "title": "Konsultasi Kedukaan", "icon": "PiClipboardTextFill", "href": "/layanan/konsultasi" }
+    {
+      "id": "1",
+      "title": "Mobil Jenazah",
+      "icon": "PiAmbulanceFill",
+      "href": "/layanan/mobil-jenazah"
+    },
+    {
+      "id": "2",
+      "title": "Perapihan Jenazah",
+      "icon": "PiUserGearFill",
+      "href": "/layanan/perapihan-jenazah"
+    },
+    {
+      "id": "3",
+      "title": "Formalin Jenazah",
+      "icon": "PiSyringeFill",
+      "href": "/layanan/formalin-jenazah"
+    },
+    {
+      "id": "4",
+      "title": "Ruang Duka",
+      "icon": "PiHouseLineFill",
+      "href": "/layanan/ruang-duka"
+    },
+    {
+      "id": "5",
+      "title": "Peti Jenazah",
+      "icon": "GiCoffin",
+      "href": "/layanan/peti-jenazah"
+    },
+    {
+      "id": "6",
+      "title": "Rangkaian Bunga",
+      "icon": "PiFlowerLotusFill",
+      "href": "/layanan/rangkaian-bunga"
+    },
+    {
+      "id": "7",
+      "title": "Foto & Video",
+      "icon": "PiCameraFill",
+      "href": "/layanan/foto-video"
+    },
+    {
+      "id": "8",
+      "title": "Voorijder / Patwal",
+      "icon": "PiMotorcycleFill",
+      "href": "/layanan/voorijder"
+    },
+    {
+      "id": "9",
+      "title": "Tanah Makam",
+      "icon": "PiCrossFill",
+      "href": "/layanan/tanah-makam"
+    },
+    {
+      "id": "10",
+      "title": "Kremasi",
+      "icon": "PiFireFill",
+      "href": "/layanan/kremasi"
+    },
+    {
+      "id": "11",
+      "title": "Cargo Jenazah",
+      "icon": "PiAirplaneTiltFill",
+      "href": "/layanan/cargo-jenazah"
+    },
+    {
+      "id": "12",
+      "title": "Konsultasi Kedukaan",
+      "icon": "PiClipboardTextFill",
+      "href": "/layanan/konsultasi"
+    }
   ],
   "heroServices": [
     {
@@ -388,7 +448,486 @@
       "category": "Modern",
       "rating": 5,
       "slug": "peti-modern",
-      "benefits": ["Desain Kontemporer", "Material Premium", "Aksesoris Stainless"]
+      "benefits": [
+        "Desain Kontemporer",
+        "Material Premium",
+        "Aksesoris Stainless"
+      ]
+    }
+  ],
+
+  "productsUnggulan": [
+    {
+      "id": 1,
+      "name": "Peti Cohort",
+      "slug": "peti-cohort",
+      "price": "Rp 15.000.000",
+      "images": [
+        {
+          "id": 1,
+          "image": "/images/layanankedukaan/ambulans.jpg",
+          "alt": "Peti Cohort"
+        },
+        {
+          "id": 2,
+          "image": "/images/layanankedukaan/fotopatwal.png",
+          "alt": "Peti Cohort"
+        },
+        {
+          "id": 3,
+          "image": "/images/layanankedukaan/ambulans.jpg",
+          "alt": "Peti Cohort"
+        }
+      ],
+      "category": "Premium",
+      "rating": 5,
+      "benefits": [
+        {
+          "id": 1,
+          "icon": "PiFlowerLotusFill",
+          "description": "Kayu Jati Asli"
+        },
+        {
+          "id": 2,
+          "icon": "PiFlowerLotusFill",
+          "description": "Ukiran Tangan"
+        },
+        {
+          "id": 3,
+          "icon": "PiFlowerLotusFill",
+          "description": "Interior Mewah"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "ambulance premium",
+      "slug": "ambulance-premium",
+      "price": "Rp 15.000.000",
+      "images": [
+       {
+          "id": 1,
+          "image": "/images/layanankedukaan/ambulans.jpg",
+          "alt": "Peti Cohort"
+        },
+        {
+          "id": 2,
+          "image": "/images/layanankedukaan/fotopatwal.png",
+          "alt": "Peti Cohort"
+        },
+        {
+          "id": 3,
+          "image": "/images/layanankedukaan/ambulans.jpg",
+          "alt": "Peti Cohort"
+        }
+      ],
+      "category": "Premium",
+      "rating": 5,
+      "benefits": [
+        {
+          "id": 1,
+          "icon": "PiFlowerLotusFill",
+          "description": "Kayu Jati Asli"
+        },
+        {
+          "id": 2,
+          "icon": "PiFlowerLotusFill",
+          "description": "Ukiran Tangan"
+        },
+        {
+          "id": 3,
+          "icon": "PiFlowerLotusFill",
+          "description": "Interior Mewah"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Perapihan Jenazah",
+      "slug": "perapihan-jenazah",
+      "price": "Rp 15.000.000",
+      "images": [
+        {
+          "id": 1,
+          "image": "/images/layanankedukaan/ambulans.jpg",
+          "alt": "Peti Cohort"
+        },
+        {
+          "id": 2,
+          "image": "/images/layanankedukaan/fotopatwal.png",
+          "alt": "Peti Cohort"
+        },
+        {
+          "id": 3,
+          "image": "/images/layanankedukaan/ambulans.jpg",
+          "alt": "Peti Cohort"
+        }
+      ],
+      "category": "Premium",
+      "rating": 5,
+      "benefits": [
+        {
+          "id": 1,
+          "icon": "PiFlowerLotusFill",
+          "description": "Kayu Jati Asli"
+        },
+        {
+          "id": 2,
+          "icon": "PiFlowerLotusFill",
+          "description": "Ukiran Tangan"
+        },
+        {
+          "id": 3,
+          "icon": "PiFlowerLotusFill",
+          "description": "Interior Mewah"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Formalin Jenazah",
+      "slug": "formalin-jenazah",
+      "price": "Rp 15.000.000",
+      "images": [
+        {
+          "id": 1,
+          "image": "/images/layanankedukaan/ambulans.jpg",
+          "alt": "Peti Cohort"
+        },
+        {
+          "id": 2,
+          "image": "/images/layanankedukaan/fotopatwal.png",
+          "alt": "Peti Cohort"
+        },
+        {
+          "id": 3,
+          "image": "/images/layanankedukaan/ambulans.jpg",
+          "alt": "Peti Cohort"
+        }
+      ],
+      "category": "Premium",
+      "rating": 5,
+      "benefits": [
+        {
+          "id": 1,
+          "icon": "PiFlowerLotusFill",
+          "description": "Kayu Jati Asli"
+        },
+        {
+          "id": 2,
+          "icon": "PiFlowerLotusFill",
+          "description": "Ukiran Tangan"
+        },
+        {
+          "id": 3,
+          "icon": "PiFlowerLotusFill",
+          "description": "Interior Mewah"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Ruang Duka",
+      "slug": "ruang-duka",
+      "price": "Rp 12.000.000",
+      "images": [
+        {
+          "id": 1,
+          "image": "/images/layanankedukaan/ambulans.jpg",
+          "alt": "Peti Cohort"
+        },
+        {
+          "id": 2,
+          "image": "/images/layanankedukaan/fotopatwal.png",
+          "alt": "Peti Cohort"
+        },
+        {
+          "id": 3,
+          "image": "/images/layanankedukaan/ambulans.jpg",
+          "alt": "Peti Cohort"
+        }
+      ],
+      "category": "Premium",
+      "rating": 5,
+      "benefits": [
+        {
+          "id": 1,
+          "icon": "PiFlowerLotusFill",
+          "description": "Kayu Jati Asli"
+        },
+        {
+          "id": 2,
+          "icon": "PiFlowerLotusFill",
+          "description": "Ukiran Tangan"
+        },
+        {
+          "id": 3,
+          "icon": "PiFlowerLotusFill",
+          "description": "Interior Mewah"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Peti Jenazah",
+      "slug": "peti-jenazah",
+      "price": "Rp 15.000.000",
+      "images": [
+        {
+          "id": 1,
+          "image": "/images/layanankedukaan/ambulans.jpg",
+          "alt": "Peti Cohort"
+        },
+        {
+          "id": 2,
+          "image": "/images/layanankedukaan/fotopatwal.png",
+          "alt": "Peti Cohort"
+        },
+        {
+          "id": 3,
+          "image": "/images/layanankedukaan/ambulans.jpg",
+          "alt": "Peti Cohort"
+        }
+      ],
+      "category": "Premium",
+      "rating": 5,
+      "benefits": [
+        {
+          "id": 1,
+          "icon": "PiFlowerLotusFill",
+          "description": "Kayu Jati Asli"
+        },
+        {
+          "id": 2,
+          "icon": "PiFlowerLotusFill",
+          "description": "Ukiran Tangan"
+        },
+        {
+          "id": 3,
+          "icon": "PiFlowerLotusFill",
+          "description": "Interior Mewah"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Rangkaian Bunga",
+      "slug": "rangkaian-bunga",
+      "price": "Rp 15.000.000",
+      "images": [
+        {
+          "id": 1,
+          "image": "/images/layanankedukaan/ambulans.jpg",
+          "alt": "Peti Cohort"
+        },
+        {
+          "id": 2,
+          "image": "/images/layanankedukaan/fotopatwal.png",
+          "alt": "Peti Cohort"
+        },
+        {
+          "id": 3,
+          "image": "/images/layanankedukaan/ambulans.jpg",
+          "alt": "Peti Cohort"
+        }
+      ],
+      "category": "Premium",
+      "rating": 5,
+      "benefits": [
+        {
+          "id": 1,
+          "icon": "PiFlowerLotusFill",
+          "description": "Kayu Jati Asli"
+        },
+        {
+          "id": 2,
+          "icon": "PiFlowerLotusFill",
+          "description": "Ukiran Tangan"
+        },
+        {
+          "id": 3,
+          "icon": "PiFlowerLotusFill",
+          "description": "Interior Mewah"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Foto Video Kematian",
+      "slug": "foto-video-kematian",
+      "price": "Rp 13.000.000",
+      "images": [
+        {
+          "id": 1,
+          "image": "/images/layanankedukaan/ambulans.jpg",
+          "alt": "Peti Cohort"
+        },
+        {
+          "id": 2,
+          "image": "/images/layanankedukaan/fotopatwal.png",
+          "alt": "Peti Cohort"
+        },
+        {
+          "id": 3,
+          "image": "/images/layanankedukaan/ambulans.jpg",
+          "alt": "Peti Cohort"
+        }
+      ],
+      "category": "Premium",
+      "rating": 5,
+      "benefits": [
+        {
+          "id": 1,
+          "icon": "PiFlowerLotusFill",
+          "description": "Kayu Jati Asli"
+        },
+        {
+          "id": 2,
+          "icon": "PiFlowerLotusFill",
+          "description": "Ukiran Tangan"
+        },
+        {
+          "id": 3,
+          "icon": "PiFlowerLotusFill",
+          "description": "Interior Mewah"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Patwal",
+      "slug": "patwal",
+      "price": "Rp 13.000.000",
+      "images": [
+       {
+          "id": 1,
+          "image": "/images/layanankedukaan/ambulans.jpg",
+          "alt": "Peti Cohort"
+        },
+        {
+          "id": 2,
+          "image": "/images/layanankedukaan/fotopatwal.png",
+          "alt": "Peti Cohort"
+        },
+        {
+          "id": 3,
+          "image": "/images/layanankedukaan/ambulans.jpg",
+          "alt": "Peti Cohort"
+        }
+      ],
+      "category": "Premium",
+      "rating": 5,
+      "benefits": [
+        {
+          "id": 1,
+          "icon": "PiFlowerLotusFill",
+          "description": "Kayu Jati Asli"
+        },
+        {
+          "id": 2,
+          "icon": "PiFlowerLotusFill",
+          "description": "Ukiran Tangan"
+        },
+        {
+          "id": 3,
+          "icon": "PiFlowerLotusFill",
+          "description": "Interior Mewah"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Tanah Makam",
+      "slug": "tanah-makam",
+      "price": "Rp 13.000.000",
+      "images": [
+        {
+          "id": 1,
+          "image": "/images/layanankedukaan/ambulans.jpg",
+          "alt": "Peti Cohort"
+        },
+        {
+          "id": 2,
+          "image": "/images/layanankedukaan/fotopatwal.png",
+          "alt": "Peti Cohort"
+        },
+        {
+          "id": 3,
+          "image": "/images/layanankedukaan/ambulans.jpg",
+          "alt": "Peti Cohort"
+        }
+      ],
+      "category": "Premium",
+      "rating": 5,
+      "benefits": [
+        {
+          "id": 1,
+          "icon": "PiFlowerLotusFill",
+          "description": "Kayu Jati Asli"
+        },
+        {
+          "id": 2,
+          "icon": "PiFlowerLotusFill",
+          "description": "Ukiran Tangan"
+        },
+        {
+          "id": 3,
+          "icon": "PiFlowerLotusFill",
+          "description": "Interior Mewah"
+        }
+      ]
+    }
+  ],
+  "sponsors": [
+    {
+      "id": 1,
+      "name": "Tech Corp",
+      "image": "/images/sponsors/logo_BCA.webp"
+    },
+    {
+      "id": 2,
+      "name": "Innovate",
+      "image": "/images/sponsors/logo_BNI.png"
+    },
+    {
+      "id": 3,
+      "name": "Creative",
+      "image": "/images/sponsors/logo_CIMB.png"
+    },
+    {
+      "id": 4,
+      "name": "Growth",
+      "image": "/images/sponsors/logo_Danamon.png"
+    },
+    {
+      "id": 5,
+      "name": "Future",
+      "image": "/images/sponsors/logo_DBS.webp"
+    },
+    {
+      "id": 6,
+      "name": "Tech Corp",
+      "image": "/images/sponsors/logo_Gpsi-Soteria.png"
+    },
+    {
+      "id": 7,
+      "name": "Innovate",
+      "image": "/images/sponsors/logo_Heaven.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Creative",
+      "image": "/images/sponsors/logo_Mandiri.png"
+    },
+    {
+      "id": 9,
+      "name": "Growth",
+      "image": "/images/sponsors/logo_PGI.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Future",
+      "image": "/images/sponsors/logo_Tabitha.webp"
     }
   ]
 }

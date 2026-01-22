@@ -1,9 +1,9 @@
 "use client";
 
-import { motion, useMotionValue, useTransform, animate } from 'framer-motion';
-import { Button, type ButtonProps } from '@/components/ui/button';
-import { cn } from '@/lib/utils';
-import React, { useEffect, useState } from 'react';
+import { motion, useMotionValue, useTransform, animate } from "framer-motion";
+import { cn } from "@/lib/utils";
+import React, { useEffect, useState } from "react";
+import { Button, ButtonProps } from "./ui/button";
 
 // CountUp component for animated numbers
 function CountUp({ value, suffix = "" }: { value: number; suffix?: string }) {
@@ -29,7 +29,8 @@ function CountUp({ value, suffix = "" }: { value: number; suffix?: string }) {
 
   return (
     <span>
-      {displayValue.toLocaleString()}{suffix}
+      {displayValue.toLocaleString()}
+      {suffix}
     </span>
   );
 }
@@ -44,7 +45,7 @@ interface SocialProofProps {
 interface ActionProps {
   text: string;
   href: string;
-  variant?: ButtonProps['variant'];
+  variant?: ButtonProps["variant"];
   className?: string;
   target?: string;
   rel?: string;
@@ -104,9 +105,21 @@ const floatingVariants = {
   },
 };
 
-const HeroSection = ({ title, subtitle, actions, socialProof, images, className }: HeroSectionProps) => {
+const HeroSection = ({
+  title,
+  subtitle,
+  actions,
+  socialProof,
+  images,
+  className,
+}: HeroSectionProps) => {
   return (
-    <section className={cn('w-full min-h-screen overflow-hidden bg-background flex items-center', className)}>
+    <section
+      className={cn(
+        "w-full min-h-screen overflow-hidden bg-background flex items-center",
+        className,
+      )}
+    >
       <div className="mx-auto w-full max-w-7xl px-4 lg:px-8 grid grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-8 py-12 sm:py-0">
         {/* Left Column: Text Content */}
         <motion.div
@@ -121,15 +134,21 @@ const HeroSection = ({ title, subtitle, actions, socialProof, images, className 
           >
             {title}
           </motion.h1>
-          <motion.p className="mt-4 sm:mt-6 max-w-md text-base sm:text-lg text-muted-foreground" variants={itemVariants}>
+          <motion.p
+            className="mt-4 sm:mt-6 max-w-md text-base sm:text-lg text-muted-foreground"
+            variants={itemVariants}
+          >
             {subtitle}
           </motion.p>
-          <motion.div className="mt-6 sm:mt-8 flex flex-col sm:flex-row w-full sm:w-auto gap-3 sm:gap-4 lg:justify-start" variants={itemVariants}>
+          <motion.div
+            className="mt-6 sm:mt-8 flex flex-col sm:flex-row w-full sm:w-auto gap-3 sm:gap-4 lg:justify-start"
+            variants={itemVariants}
+          >
             {actions.map((action, index) => (
-              <Button 
-                key={index} 
-                variant={action.variant} 
-                size="lg" 
+              <Button
+                key={index}
+                variant={action.variant}
+                size="lg"
                 className={cn("w-full sm:w-auto", action.className)}
                 asChild
               >
@@ -139,7 +158,10 @@ const HeroSection = ({ title, subtitle, actions, socialProof, images, className 
               </Button>
             ))}
           </motion.div>
-          <motion.div className="mt-8 sm:mt-12 flex items-center justify-center gap-4 lg:justify-start" variants={itemVariants}>
+          <motion.div
+            className="mt-8 sm:mt-12 flex items-center justify-center gap-4 lg:justify-start"
+            variants={itemVariants}
+          >
             {/* Avatar Stack */}
             <div className="flex -space-x-3">
               {socialProof.avatars.map((avatar, index) => (
@@ -160,9 +182,14 @@ const HeroSection = ({ title, subtitle, actions, socialProof, images, className 
             <div>
               <p className="text-lg text-left font-bold text-foreground">
                 {(() => {
-                  const numericMatch = socialProof.value.match(/^([\d.]+)(.*)$/);
-                  const numericValue = numericMatch ? parseFloat(numericMatch[1]) : null;
-                  const suffix = numericMatch ? numericMatch[2] : socialProof.value;
+                  const numericMatch =
+                    socialProof.value.match(/^([\d.]+)(.*)$/);
+                  const numericValue = numericMatch
+                    ? parseFloat(numericMatch[1])
+                    : null;
+                  const suffix = numericMatch
+                    ? numericMatch[2]
+                    : socialProof.value;
                   return numericValue !== null ? (
                     <CountUp value={numericValue} suffix={suffix} />
                   ) : (
@@ -170,7 +197,9 @@ const HeroSection = ({ title, subtitle, actions, socialProof, images, className 
                   );
                 })()}
               </p>
-              <p className="text-sm text-muted-foreground">{socialProof.label}</p>
+              <p className="text-sm text-muted-foreground">
+                {socialProof.label}
+              </p>
             </div>
           </motion.div>
         </motion.div>
@@ -192,36 +221,48 @@ const HeroSection = ({ title, subtitle, actions, socialProof, images, className 
             className="absolute bottom-0 right-1/4 h-12 w-12 rounded-lg bg-purple-200/50 dark:bg-purple-800/30"
             variants={floatingVariants}
             animate="animate"
-            style={{ animationDelay: '0.5s' }}
+            style={{ animationDelay: "0.5s" }}
           />
           <motion.div
             className="absolute bottom-1/4 left-4 h-6 w-6 rounded-full bg-green-200/50 dark:bg-green-800/30"
             variants={floatingVariants}
             animate="animate"
-            style={{ animationDelay: '1s' }}
+            style={{ animationDelay: "1s" }}
           />
 
           {/* Images */}
           <motion.div
             className="absolute left-1/2 top-0 h-56 w-56 -translate-x-1/2 rounded-2xl bg-muted p-2 shadow-lg sm:h-72 sm:w-72"
-            style={{ transformOrigin: 'bottom center' }}
+            style={{ transformOrigin: "bottom center" }}
             variants={imageVariants}
           >
-            <img src={images[0]} alt="Service image 1" className="h-full w-full rounded-xl object-cover" />
+            <img
+              src={images[0]}
+              alt="Service image 1"
+              className="h-full w-full rounded-xl object-cover"
+            />
           </motion.div>
           <motion.div
             className="absolute right-0 top-1/3 h-48 w-48 rounded-2xl bg-muted p-2 shadow-lg sm:h-64 sm:w-64"
-            style={{ transformOrigin: 'left center' }}
+            style={{ transformOrigin: "left center" }}
             variants={imageVariants}
           >
-            <img src={images[1]} alt="Service image 2" className="h-full w-full rounded-xl object-cover" />
+            <img
+              src={images[1]}
+              alt="Service image 2"
+              className="h-full w-full rounded-xl object-cover"
+            />
           </motion.div>
           <motion.div
             className="absolute bottom-0 left-0 h-40 w-40 rounded-2xl bg-muted p-2 shadow-lg sm:h-56 sm:w-56"
-            style={{ transformOrigin: 'top right' }}
+            style={{ transformOrigin: "top right" }}
             variants={imageVariants}
           >
-            <img src={images[2]} alt="Service image 3" className="h-full w-full rounded-xl object-cover" />
+            <img
+              src={images[2]}
+              alt="Service image 3"
+              className="h-full w-full rounded-xl object-cover"
+            />
           </motion.div>
         </motion.div>
       </div>

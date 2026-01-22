@@ -1,18 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { Header } from "@/components/header-3";
-import { Footer7 } from "@/components/footer-7";
-
-// const geistSans = Geist({
-//   variable: "--font-geist-sans",
-//   subsets: ["latin"],
-// });
-
-// const geistMono = Geist_Mono({
-//   variable: "--font-geist-mono",
-//   subsets: ["latin"],
-// });
+import { Header } from "./components/header-3";
+import { Footer7 } from "./components/footer-7";
 
 export const metadata: Metadata = {
   title: "Layanan Edens",

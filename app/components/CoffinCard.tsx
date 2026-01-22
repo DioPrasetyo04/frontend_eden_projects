@@ -43,7 +43,7 @@ export default function CoffinCard({ product }: CoffinCardProps) {
         {/* Badges Overlay */}
         <div className="absolute top-4 left-4 z-20 flex items-center gap-1 bg-white/90 backdrop-blur-sm px-2 py-1 rounded-lg border border-slate-100 shadow-sm">
            <HiStar className="w-4 h-4 text-yellow-500" />
-           <span className="text-xs font-bold text-slate-700">{product.rating}.0</span>
+           <span className="text-xs font-bold text-slate-700">{product.rating}</span>
         </div>
         <div className="absolute top-4 right-4 z-20 bg-slate-900/5 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-slate-700 tracking-wide uppercase border border-white/20">
             {product.category}
